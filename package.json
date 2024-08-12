@@ -4,8 +4,8 @@
   "description": "Interactive rating component",
   "main": "index.js",
   "scripts": {
-    "css:watch": "npx tailwindcss -i ./src/main.css -o ./dist/main.css --watch",
-    "css:build": "npx tailwindcss -i ./src/main.css -o ./dist/main.css",
+    "css:watch": "npx tailwindcss -i ./src/main.css -o ./src/dist.css --watch",
+    "css:build": "npx tailwindcss -i ./src/main.css -o ./src/dist.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
