@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .rating-btn {
+        @apply text-light-grey bg-dark-blue h-11 w-11 rounded-full flex items-center justify-center;
+    }
+}
