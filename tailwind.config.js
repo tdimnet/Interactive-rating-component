@@ -9,6 +9,9 @@ module.exports = {
       'pure-white': '#FFF',
       'very-dark-blue': '#131518'
     },
+    fontFamily: {
+      'body': ['Overpass', 'sans-serif']
+    },
     extend: {},
   },
   plugins: [],
