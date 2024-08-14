@@ -1,0 +1,31 @@
+name: Deploy with GH Actions to set up project with Tailwind
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checking out
+        uses: actions/checkout@v4
+      - name: Setting up Node 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "npm"
+      - name: Installing dependencies
+        run: npm ci
+      - name: Building CSS with Tailwind
+        run: npm run css:build
+      - name: Copying index.html to dist directory
+        run: cp index.html dist/
+      - name: Running ls to see if dist is up to date
+        run: ls dist/
