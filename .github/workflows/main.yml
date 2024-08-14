@@ -29,3 +29,14 @@ jobs:
         run: ls
       - name: Copying index.html to dist directory
         run: cp ./src/index.html dist/
+      - name: Copying images to dist/img directory
+        run: cp -r ./src/images dist/images
+      - name: Setting up Pages
+        uses: actions/configure-pages@v3
+      - name: Uploading artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "./dist"
+      - name: Deploying to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
