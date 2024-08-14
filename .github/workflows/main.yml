@@ -26,6 +26,6 @@ jobs:
       - name: Building CSS with Tailwind
         run: npm run css:build
       - name: Copying index.html to dist directory
-        run: cp src/index.html dist/
+        run: cp src/index.html dist/index.html
       - name: Running ls to see if dist is up to date
         run: ls dist/
