@@ -27,3 +27,5 @@ jobs:
         run: npm run css:build
       - name: Running ls
         run: ls
+      - name: Copying index.html to dist directory
+        run: cp ./src/index.html dist/
