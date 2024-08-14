@@ -4,6 +4,10 @@
 
 @layer components {
     .rating-btn {
-        @apply text-light-grey bg-dark-blue h-11 w-11 rounded-full flex items-center justify-center;
+        @apply text-light-grey bg-dark-blue h-11 w-11 rounded-full flex items-center justify-center cursor-pointer duration-500 hover:bg-orange hover:text-dark-blue;
+    }
+
+    .selected-rating {
+        @apply bg-pure-white text-dark-blue;
     }
 }
