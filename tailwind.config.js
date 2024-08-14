@@ -14,7 +14,11 @@ module.exports = {
     fontFamily: {
       'body': ['Overpass', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '112': '25.75rem'
+      }
+    },
   },
   plugins: [],
 }
